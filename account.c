@@ -14,7 +14,7 @@ void createAccount(){
 
     newNode->balance=0;
     newNode->historyCount=0;
-    newNode->next=NULL; //Don't forget this,'next' contains garbage value: linked list may crash
+    newNode->next=NULL; 
 
     if(head==NULL){
         head=newNode;
@@ -33,7 +33,7 @@ void createAccount(){
 
 void displayAccounts(){
     AccountPtr temp=head;
-    while(temp!=NULL){ //I directly use 'head' instead of using 'temp',it was false. And then I wrote temp->next!=NULL,it was also false.
+    while(temp!=NULL){
         printf("Account No: %d | Account name: %s | Balance: %.2f \n",
                temp->accNo,temp->accName,temp->balance);
         temp=temp->next;
