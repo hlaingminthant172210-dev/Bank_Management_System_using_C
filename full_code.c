@@ -260,7 +260,7 @@ int main() {
     while (1) {
         printf("\n1.Create\n2.Display\n3.Deposit\n4.Withdraw\n");
         printf("5.Transfer\n6.Check Balance\n7.Update\n");
-        printf("8.Delete\n9.History\n10.Exit\n");
+        printf("8.Delete\n9.History\n0.Exit\n");
 
         printf("Choice: ");
         scanf("%d", &choice);
@@ -275,7 +275,7 @@ int main() {
             case 7: updateAccount(); break;
             case 8: deleteAccount(); break;
             case 9: viewHistory(); break;
-            case 10: return 0;
+            case 0: return 0;
             default: printf("Invalid\n");
         }
     }
